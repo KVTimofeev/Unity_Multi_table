@@ -1,0 +1,105 @@
+Initialize engine version: 5.2.0f3 (e7947df39b5c)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: AMD Radeon HD 8330 (ID=0x9832)
+    Vendor:   ATI
+    VRAM:     497 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\UnityEngine.Networking.dll (this message is harmless)
+Loading C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\UnityEngine.Networking.dll into Unity Child Domain
+Platform assembly: C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\System.Core.dll (this message is harmless)
+- Completed reload, in  0.179 seconds
+desktop: 1366x768 60Hz; virtual: 1366x768 at 0,0
+<RI> Initializing input.
+<RI> Input initialized.
+<RI> Initialized touch support.
+Platform assembly: C:\Users\User\Documents\Unity5MultiTables\pcMultiTablse_Data\Managed\System.dll (this message is harmless)
+Setting up 1 worker threads for Enlighten.
+  Thread -> id: 11c8 -> priority: 1 
+ты угадал
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.157154 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 329.
+Total: 0.448636 ms (FindLiveObjects: 0.112159 ms CreateObjectMapping: 0.041033 ms MarkObjects: 0.278346 ms  DeleteObjects: 0.014361 ms)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+ты угадал
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.747358 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 329.
+Total: 0.627818 ms (FindLiveObjects: 0.117630 ms CreateObjectMapping: 0.067021 ms MarkObjects: 0.419229 ms  DeleteObjects: 0.019149 ms)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+ты угадал
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+Unloading 2 Unused Serialized files (Serialized files now loaded: 0)
+UnloadTime: 1.700853 ms
+
+Unloading 1 unused Assets to reduce memory usage. Loaded Objects now: 329.
+Total: 0.654490 ms (FindLiveObjects: 0.132676 ms CreateObjectMapping: 0.069073 ms MarkObjects: 0.429487 ms  DeleteObjects: 0.019149 ms)
+
+IndexOutOfRangeException: Array index is out of range.
+  at oncam.okno_enter_answer () [0x00000] in <filename unknown>:0 
+  at oncam.Start () [0x00000] in <filename unknown>:0 
+ 
+(Filename:  Line: -1)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
+верно
+ 
+(Filename: C:/buildslave/unity/build/artifacts/generated/common/runtime/UnityEngineDebugBindings.gen.cpp Line: 64)
+
