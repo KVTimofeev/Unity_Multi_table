@@ -39,8 +39,9 @@ public class oncam : MonoBehaviour {
 		currentIndexQuest = tables.currentQuestIndex;
 
 		//okno_calc ();
-		float float_x = -7.4f;
-		float float_y = 4.2f;
+		float x_src_pos = -4.65f;
+		float float_x = x_src_pos;//-6.4
+		float float_y = 3.34f;//4.2
 		int i = 1;
 		tables.countSquares = 0;
 		while (float_y>0f) {
@@ -50,10 +51,14 @@ public class oncam : MonoBehaviour {
 			ExamplesList.Add(new DifferenceEx());
 			ExamplesList.Add(new Multiplication());
 		ExamplesList.Add(new Division());
+			ExamplesList.Add(new Summ());
+			ExamplesList.Add(new DifferenceEx());
+			ExamplesList.Add(new Multiplication());
+			ExamplesList.Add(new Division());
 			helper helperCreateExample = helper.TakeHelper();
-			int[] seqExamples={0,1,2,3};
+			int[] seqExamples={0,1,2,3,4,5,6,7};
 			seqExamples=helperCreateExample.ShuffleInts(seqExamples);
-			while (float_x<0) {
+			while (float_x<1.5) {
 				tables.countSquares++;
 			GameObject go = Instantiate (kvadrat) as GameObject;
 
@@ -61,7 +66,7 @@ public class oncam : MonoBehaviour {
 				TextMesh txtOnKvadratik=(TextMesh)go.GetComponentInChildren<TextMesh>() as TextMesh;
 				//helper helperCreateExample = helper.TakeHelper();
 
-				///сюда вставить функцию которая будет взаимоменять примеры между собой example summ differecne
+				//сюда вставить функцию которая будет взаимоменять примеры между собой example summ differecne
 				//example ex=func(queque);
 
 				Example summa=ExamplesList[seqExamples[queque]] as Example;
@@ -69,15 +74,16 @@ public class oncam : MonoBehaviour {
 
 
 				txtOnKvadratik.text=summa.StrExample();
-
+				//Summ summa = new Summ();
+				//txtOnKvadratik.text=Summ.StrExample();
 
 				go.name="exNum"+i+"ans="+summa.Answer();
 
 			i++;
-			float_x += 2f;
+			float_x += 1.7f;
 			}
-			float_x=-7.5f;
-			float_y-=1.15f;
+			float_x=x_src_pos;
+			float_y-=0.9f;
 		}
 
 		okno_enter_answer ();
@@ -90,12 +96,14 @@ public class oncam : MonoBehaviour {
 		}
 
 	void okno_enter_answer(){
-		float bukv_x = -8f;
+		float bukv_x = -5f;//-8
 		float bukv_y = -1.8f;
 		tables.answer_current_fon = tables.answers_PicturesGo[currentIndexQuest];
 		string str = tables.answer_current_fon;
 		helper helpForAnswerStr = helper.TakeHelper ();
-		str = helpForAnswerStr.addedSimbols (str, str.Length + 4);
+		int countSimbs = 8;
+		int ost = countSimbs - str.Length;
+		str = helpForAnswerStr.addedSimbols (str, str.Length + ost);
 		str = helpForAnswerStr.Shuffle (str);
 		int str_len = str.Length;
 		while (str_len>0) {
@@ -113,7 +121,7 @@ public class oncam : MonoBehaviour {
 		}
 
 
-
+	/*
 	public string Shuffle(string str)
 	{
 		char[] array = str.ToCharArray();
@@ -129,7 +137,7 @@ public class oncam : MonoBehaviour {
 		}
 		return new string(array);
 	}
-
+*/
 
 	
 	// Update is called once per frame

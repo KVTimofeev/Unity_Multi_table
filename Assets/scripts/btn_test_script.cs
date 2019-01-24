@@ -23,6 +23,7 @@ public class btn_test_script : MonoBehaviour {
 			Destroy(square);
 			Destroy (parent);
 			tables.countSquares--;
+			tables.str_id="";
 			if(tables.countSquares<1){
 				manageLev manager=GameObject.Find("ManagerLevel").GetComponent<manageLev>();
 				manager.EndLevel();
