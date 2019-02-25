@@ -17,8 +17,23 @@ public class tables  {
 	public static Sprite[] PictureGo;
 	public static Sprite current_s_srite;
 	public static string[] answers_PicturesGo =new string[]{"домик","пустыня","коала","пингвины"};
+	public static string[] answers_PictureGo_Animals=new string[]{
+		"белка",
+		"рысь",
+		"лев",
+		"крокодил"
+	};
+	public static string[] answers_PictureGo_Contries=new string[]{
+		"англия",
+		"италия",
+		"австралия",
+		"антарктика",
+		"африка"
+	};
+
 	public static int currentQuestIndex=0;
 	public static int countSquares = 0;
+	public static string Category="";
 
 	public static Stack<SimbolsAnsw>stack_delets_simbols_current_lev;
 
@@ -29,11 +44,15 @@ public class tables  {
 			if(value==PictureGo.Length){
 				currentQuestIndex=0;
 			}
-
 		}
 		get{
 			return currentQuestIndex;
 		}
+	}
+	public static class Categories{
+		public const string ANIMALS="Animals";
+		public const string COUNTRIES="Countries";
+		public const string CARTOONS="Cartoons";
 	}
 
 

@@ -6,6 +6,10 @@ public class oncam : MonoBehaviour {
 	//PictureGo - переменная в которой хранится массив спрайтов картинок которые угадывает пользователь, т.е. является меняемым фоном в current_fon
 	public Sprite[] PictureGo;
 	//current спрайт который является текущим фоном, т.к. когда пользователь угадывает картинку эта переменная менятся на другую картинку из PictureGo
+	public Sprite[] AnimalsPicters;
+	public Sprite[] CartoonsPicters;
+	public Sprite[] CountriesPicters;
+
 	public Sprite current;
 	//kvadrat это спрайт на которм пишется математический пример (квадритик в двумерном массиве), который вычисляет пользователь при его нажатии
 	public GameObject kvadrat;
@@ -21,10 +25,22 @@ public class oncam : MonoBehaviour {
 		//не хватает появлениея ответа при угадывании всех примеров!!!!!!!!!!!!!!!!
 
 		if (tables.PictureGo == null) {
-			tables.PictureGo = PictureGo;
+
+			switch(tables.Category){
+			case tables.Categories.ANIMALS:tables.PictureGo=AnimalsPicters; 
+				tables.answers_PicturesGo=tables.answers_PictureGo_Animals;
+				break;
+			case tables.Categories.COUNTRIES:tables.PictureGo=CountriesPicters;
+				tables.answers_PicturesGo=tables.answers_PictureGo_Contries;
+				break;
+			//default:
+			//	tables.PictureGo=PictureGo; break;
+
+			}
+			//tables.PictureGo = PictureGo;
 			tables.currentQuestIndex = 0;
 			//tables.answers_PicturesGo = new string[]{"домик","пустыня","коала","пингвины"};
-			current=PictureGo[currentIndexQuest];
+			current=tables.PictureGo[currentIndexQuest];
 
 
 		} else {
@@ -34,7 +50,7 @@ public class oncam : MonoBehaviour {
 
 		}
 		SpriteRenderer currentFon = (SpriteRenderer)GameObject.Find ("current_fon").GetComponent<SpriteRenderer>() as SpriteRenderer;
-		current=PictureGo[tables.currentQuestIndex];
+		current=tables.PictureGo[tables.currentQuestIndex];
 		currentFon.sprite = current;
 		currentIndexQuest = tables.currentQuestIndex;
 
@@ -96,7 +112,7 @@ public class oncam : MonoBehaviour {
 		}
 
 	void okno_enter_answer(){
-		float bukv_x = -5f;//-8
+		float bukv_x = -5f;
 		float bukv_y = -1.8f;
 		tables.answer_current_fon = tables.answers_PicturesGo[currentIndexQuest];
 		string str = tables.answer_current_fon;
