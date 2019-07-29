@@ -130,6 +130,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   simbol: {fileID: 179310, guid: d6b9d19f0d013ad488c56435b2e22c18, type: 2}
+  pict_ans_wind: picture_answered_wind
 --- !u!212 &21287184
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -171,6 +172,10 @@ Prefab:
       propertyPath: simbol
       value: 
       objectReference: {fileID: 179310, guid: d6b9d19f0d013ad488c56435b2e22c18, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_SortingOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 152370}

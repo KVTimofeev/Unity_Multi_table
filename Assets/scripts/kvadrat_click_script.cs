@@ -19,12 +19,12 @@ public class kvadrat_click_script : MonoBehaviour {
 		if (!string.IsNullOrEmpty(tables.str_id)) {
 			GameObject lastSquare = GameObject.Find (tables.str_id);
 			SpriteRenderer sprite=(SpriteRenderer)lastSquare.GetComponent<SpriteRenderer> () as SpriteRenderer;
-			sprite.sortingOrder = 1;
+			sprite.sortingOrder = 0;
 			//Debug.Log("sortLay");
 
 		}
 		tables.str_id = gameObject.name;
-		gameObject.GetComponent<SpriteRenderer>().sortingOrder=0;
+		gameObject.GetComponent<SpriteRenderer>().sortingOrder=-1;
 		GameObject okno_calc_inst;
 		if(GameObject.Find("okno_calc (1)(Clone)")==null){
 			okno_calc_inst=Instantiate (okno_calc);

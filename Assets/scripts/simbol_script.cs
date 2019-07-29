@@ -10,8 +10,8 @@ public class simbol_script : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 
-			GameObject ManagerLevel = GameObject.Find ("ManagerLevel");
-			manager=ManagerLevel.GetComponent<manageLev>();
+			//GameObject ManagerLevel = GameObject.Find ("ManagerLevel");
+			//manager=ManagerLevel.GetComponent<manageLev>();
 
 
 	}
@@ -24,7 +24,7 @@ public class simbol_script : MonoBehaviour {
 		enterText = GameObject.Find ("for_entered_text_answer");
 		TextMesh txtSimbol = (TextMesh)gameObject.GetComponentInChildren<TextMesh> () as TextMesh;
 		TextMesh txt_enterText = (TextMesh)enterText.GetComponent<TextMesh> () as TextMesh;
-		manageLev manage=(manageLev)GameObject.Find(tables.Managerlevel).GetComponent<manageLev>() as manageLev;
+		//manageLev manage=(manageLev)GameObject.Find(tables.Managerlevel).GetComponent<manageLev>() as manageLev;
 
 
 		if (tables.stack_delets_simbols_current_lev == null) {
@@ -43,9 +43,11 @@ public class simbol_script : MonoBehaviour {
 		txt_enterText.text += txtSimbol.text;
 		if (GameObject.Find ("delete(Clone)") == null) {
 			GameObject del=Instantiate(deleteBtn);
-			del.transform.position=new Vector3(deleteBtn.transform.position.x,deleteBtn.transform.position.y,
-			                                   tables.zone_visible_z);
-			del.transform.parent=GameObject.Find("picter_answered_wind").transform;
+			//del.transform.position=new Vector3(deleteBtn.transform.position.x,deleteBtn.transform.position.y,
+			  //                                 tables.zone_visible_z);
+			del.transform.localPosition=new Vector2(3.3f,-1.33f);
+			del.transform.localScale=new Vector2(1.6f,0.91f);
+			del.transform.parent=GameObject.Find("picture_answered_wind").transform;
 		}
 		if (txt_enterText.text == tables.answer_current_fon) {
 			Debug.Log ("ты угадал");

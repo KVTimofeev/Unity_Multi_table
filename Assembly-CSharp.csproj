@@ -46,9 +46,17 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CurrentFonScript.cs" />
+     <Compile Include="Assets\Options.cs" />
+     <Compile Include="Assets\ScriptsOptions\ChangeSliders.cs" />
+     <Compile Include="Assets\ScriptsOptions\Sliders.cs" />
+     <Compile Include="Assets\ScriptsOptions\back_options.cs" />
+     <Compile Include="Assets\ScriptsOptions\value.cs" />
      <Compile Include="Assets\ScrollViewCOnt.cs" />
+     <Compile Include="Assets\SliderChange.cs" />
      <Compile Include="Assets\btn_options.cs" />
      <Compile Include="Assets\choose_category.cs" />
+     <Compile Include="Assets\creat_cubiks2.cs" />
+     <Compile Include="Assets\creats_cubiks.cs" />
      <Compile Include="Assets\scripts\Examples\DifferenceEx.cs" />
      <Compile Include="Assets\scripts\Examples\Division.cs" />
      <Compile Include="Assets\scripts\Examples\Example.cs" />
@@ -68,15 +76,23 @@
      <Compile Include="Assets\scripts\nextlev.cs" />
      <Compile Include="Assets\scripts\okno_calc_script.cs" />
      <Compile Include="Assets\scripts\oncam.cs" />
+     <Compile Include="Assets\scripts\oncam2.cs" />
+     <Compile Include="Assets\scripts\option_count_examples_for_types.cs" />
      <Compile Include="Assets\scripts\picter_answered_wind_scrrr.cs" />
      <Compile Include="Assets\scripts\simbol_script.cs" />
      <Compile Include="Assets\scripts\tables.cs" />
-     <Compile Include="Assets\value.cs" />
+     <Compile Include="Assets\values.cs" />
+ <Reference Include="UnityEngine.Advertisements">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Advertisements/UnityEngine.Advertisements.dll</HintPath>
+ </Reference>
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.Networking">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
  </Reference>
  <Reference Include="Mono.Cecil">
  <HintPath>C:/Program Files/Unity/Editor/Data/Managed/Mono.Cecil.dll</HintPath>

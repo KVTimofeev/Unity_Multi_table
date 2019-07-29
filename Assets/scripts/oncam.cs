@@ -67,10 +67,10 @@ public class oncam : MonoBehaviour {
 			ExamplesList.Add(new DifferenceEx());
 			ExamplesList.Add(new Multiplication());
 		ExamplesList.Add(new Division());
-			ExamplesList.Add(new Summ());
-			ExamplesList.Add(new DifferenceEx());
 			ExamplesList.Add(new Multiplication());
-			ExamplesList.Add(new Division());
+			ExamplesList.Add(new Multiplication());
+			ExamplesList.Add(new Multiplication());
+			ExamplesList.Add(new Multiplication());
 			helper helperCreateExample = helper.TakeHelper();
 			int[] seqExamples={0,1,2,3,4,5,6,7};
 			seqExamples=helperCreateExample.ShuffleInts(seqExamples);

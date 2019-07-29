@@ -49,11 +49,23 @@ public class tables  {
 			return currentQuestIndex;
 		}
 	}
+	public static class HierarchyNames{
+		public const string pict_ans_wind = "picture_answered_wind";
+	}
 	public static class Categories{
 		public const string ANIMALS="Animals";
 		public const string COUNTRIES="Countries";
 		public const string CARTOONS="Cartoons";
 	}
+
+	//in options:
+	public static int count_sliders=4;
+	public static int total_summ_examples=16;
+	//summ_examples/count_sliders
+	public static int count_examples_for_summ = 4;//
+	public static int count_examples_for_subvision=4; 
+	public static int count_examples_for_multiply=4;
+	public static int count_examples_for_division=4 ;
 
 
 }

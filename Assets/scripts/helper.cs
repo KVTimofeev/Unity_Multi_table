@@ -113,6 +113,16 @@ public class helper {
 		string[] strs = str.Split (ch_arr);
 		return strs[0]+strs[1];
 	}
+	//сумма абсолютно весх элементов массива arr
+	public int summ_all_elems(int[] arr){
+		int i = 0;
+		int summ = 0;
+		while (i<arr.Length) {
+			summ+=arr[i];
+			i++;
+		}
+		return summ;
+	}
 
 
 

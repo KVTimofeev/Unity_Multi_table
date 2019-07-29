@@ -4,7 +4,8 @@ using System.Collections;
 public class delete_script : MonoBehaviour {
 
 	public GameObject simbol;
-
+	public string pict_ans_wind="picture_answered_wind";
+	//"picter_answered_wind"
 	// Use this for initialization
 	void Start () {
 	
@@ -15,7 +16,9 @@ public class delete_script : MonoBehaviour {
 	
 	}
 	void OnMouseDown(){
-		GameObject ans_wind = GameObject.Find ("picter_answered_wind");
+		Debug.Log ("delete btn push");
+		GameObject ans_wind = GameObject.Find (tables.HierarchyNames.pict_ans_wind);
+
 		TextMesh txtOnAnswer = (TextMesh)ans_wind.GetComponentInChildren<TextMesh> () as TextMesh;
 		if (txtOnAnswer.text.Length > 0) {
 			string str = txtOnAnswer.text;

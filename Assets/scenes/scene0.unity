@@ -1835,7 +1835,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
-  m_SortingOrder: -1
+  m_SortingOrder: -2
   m_Sprite: {fileID: 21300000, guid: 4f644c2c830ebef4ba1c7ee3553f0e0f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
 --- !u!4 &1403677682
@@ -1845,7 +1845,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1403677680}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: .360000014, y: 1.14999998, z: 0}
+  m_LocalPosition: {x: .360000014, y: 1.13999999, z: 0}
   m_LocalScale: {x: .699856281, y: .796722531, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1998,6 +1998,10 @@ Prefab:
     - target: {fileID: 462344, guid: 1ad04892f5f52844eaf9c6212ce95989, type: 2}
       propertyPath: m_LocalScale.y
       value: .475041986
+      objectReference: {fileID: 0}
+    - target: {fileID: 21291996, guid: 1ad04892f5f52844eaf9c6212ce95989, type: 2}
+      propertyPath: m_SortingOrder
+      value: -1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 1ad04892f5f52844eaf9c6212ce95989, type: 2}
@@ -2446,6 +2450,7 @@ GameObject:
   - 81: {fileID: 2131753096}
   - 114: {fileID: 2131753095}
   - 20: {fileID: 2131753099}
+  - 114: {fileID: 2131753101}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2459,7 +2464,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2131753094}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bffb35a50f85eea4ba9447c3221e9f7b, type: 3}
   m_Name: 
@@ -2527,7 +2532,7 @@ Camera:
   field of view: 60
   orthographic: 1
   orthographic size: 3.78654575
-  m_Depth: -1
+  m_Depth: -2
   m_CullingMask:
     serializedVersion: 2
     m_Bits: 4294967295
@@ -2557,3 +2562,30 @@ RectTransform:
   m_AnchoredPosition: {x: .479999989, y: 1.12}
   m_SizeDelta: {x: 1768, y: 952}
   m_Pivot: {x: .5, y: .5}
+--- !u!114 &2131753101
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2131753094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79621d22a8469014689ee9970542cf35, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PictureGo:
+  - {fileID: 21300000, guid: ddbd1be2574589d4fb07a81b41f74f6f, type: 3}
+  - {fileID: 21300000, guid: 9ab17b0a2145d8d4888457906826e2d5, type: 3}
+  - {fileID: 21300000, guid: 05d8566d67a1a604987b8c847559e022, type: 3}
+  - {fileID: 21300000, guid: efa423564899b5247852d41808871c10, type: 3}
+  AnimalsPicters:
+  - {fileID: 21300000, guid: b888f6684baaec644a339c90f82f6054, type: 3}
+  - {fileID: 21300000, guid: fc7641ed06aa07045baaa983374e24d6, type: 3}
+  - {fileID: 21300000, guid: 66499496b042bbd498155b8321bfe334, type: 3}
+  - {fileID: 21300000, guid: 6beed1b75a4c4f44ab9dc8ace399d12e, type: 3}
+  CartoonsPicters: []
+  CountriesPicters: []
+  current: {fileID: 1281943475}
+  kvadrat: {fileID: 151184, guid: 875a64d274aaae244bbe4dd4f033b5e4, type: 2}
+  Okno_calc: {fileID: 171390, guid: ecd1dcf38af63bf4d88b736afc54e5e1, type: 2}
+  simbol: {fileID: 179310, guid: d6b9d19f0d013ad488c56435b2e22c18, type: 2}
