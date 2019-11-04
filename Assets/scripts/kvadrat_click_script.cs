@@ -15,7 +15,7 @@ public class kvadrat_click_script : MonoBehaviour {
 	
 	}
 	void OnMouseDown(){
-
+		//table.str_id - ид последнего элемента.
 		if (!string.IsNullOrEmpty(tables.str_id)) {
 			GameObject lastSquare = GameObject.Find (tables.str_id);
 			SpriteRenderer sprite=(SpriteRenderer)lastSquare.GetComponent<SpriteRenderer> () as SpriteRenderer;
@@ -23,14 +23,18 @@ public class kvadrat_click_script : MonoBehaviour {
 			//Debug.Log("sortLay");
 
 		}
+		//назначим теперь новый ид для текущего объекта
 		tables.str_id = gameObject.name;
 		gameObject.GetComponent<SpriteRenderer>().sortingOrder=-1;
+
+
 		GameObject okno_calc_inst;
 		if(GameObject.Find("okno_calc (1)(Clone)")==null){
 			okno_calc_inst=Instantiate (okno_calc);
 		}else{
 			okno_calc_inst=GameObject.Find("okno_calc (1)(Clone)");
 		}
+		//okno_calc_inst=Instantiate (okno_calc);
 		TextMesh txtOnSolutOkno = (TextMesh)okno_calc_inst.GetComponentInChildren<TextMesh> () as TextMesh;
 		TextMesh txtOnKvadradic = (TextMesh)gameObject.GetComponentInChildren<TextMesh> () as TextMesh;
 		txtOnSolutOkno.text = txtOnKvadradic.text+"=";

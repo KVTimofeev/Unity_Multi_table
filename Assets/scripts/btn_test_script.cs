@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class btn_test_script : MonoBehaviour {
-
+	string Tag="btn_test_script:";
 	// Use this for initialization
 	void Start () {
 	
@@ -28,9 +28,9 @@ public class btn_test_script : MonoBehaviour {
 				manageLev manager=GameObject.Find("ManagerLevel").GetComponent<manageLev>();
 				manager.EndLevel();
 			}
-			Debug.Log ("верно");
+			Debug.Log (Tag+"верно");
 		} else {
-			Debug.Log("neverno");
+			Debug.Log(Tag+"neverno");
 		}
 
 	}

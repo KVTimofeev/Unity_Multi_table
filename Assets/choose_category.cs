@@ -2,7 +2,6 @@
 using System.Collections;
 
 public class choose_category : MonoBehaviour {
-	string result;
 	// Use this for initialization
 	void Start () {
 

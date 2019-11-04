@@ -30,6 +30,11 @@ public class Sliders {
 			return array_means_sliders;
 		}
 	}
+	public static void DestroySingl(){
+		if (array_means_sliders != null) {
+			array_means_sliders=null;
+		}
+	}
 
 	//исчисление значения слайдеров идет с нуля
 	public int GetMeanOfSlider(int ind){
@@ -121,11 +126,11 @@ public class Sliders {
 			}else{
 			decrease=false;
 			}		
-		int i=0;
+		//int i=0;
 		int exeptionIndex=indexOfSlider;//exeptionindex - индекц элемента который ставим в качестве исключения, то есть это ползунок которым в текущий моменнт пользуется пользователь
 		int retind = last_indexOfSlider;//retind это индекс элемента который менял свое значения в прошлый раз
-		int count_zero=0;// счетчик количества элементов массива равняющимся нулю
-		int j=-1;
+		//int count_zero=0;// счетчик количества элементов массива равняющимся нулю
+		//int j=-1;
 		//difference равно одному когда пользователь смезает ползунок медленно
 		if (difference == 1) {
 			if(last_ind_not_empty){
@@ -216,7 +221,7 @@ public class Sliders {
 			//эта функция выравнивает это значение, так чтобы в сумме они все были вновь равны summ
 			int d=difference_between_exp_and_require_summ_elem(exeptionIndex);
 			//d - difference сама разница, то есть насколько уменьшаем или увеличиваем
-			int max_ind = search_max (means,exeptionIndex);//увеличивать или уменьшать мы будем 
+			//int max_ind = search_max (means,exeptionIndex);//увеличивать или уменьшать мы будем 
 			//максимальный элемент.
 			conversion(exeptionIndex,d);	
 		}

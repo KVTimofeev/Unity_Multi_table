@@ -51,6 +51,7 @@ public class tables  {
 	}
 	public static class HierarchyNames{
 		public const string pict_ans_wind = "picture_answered_wind";
+		public const string NUMS_WIND_CALC = "okno_calc (1)(Clone)";
 	}
 	public static class Categories{
 		public const string ANIMALS="Animals";

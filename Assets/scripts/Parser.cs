@@ -9,9 +9,9 @@ public class Parser {
 		mainFunc ();
 	}
 	void mainFunc(){
-		char a=src_str[0];
+		//char a=src_str[0];
 		//tables.a = int.Parse (a + "");
-		char b = src_str [2];
+		//char b = src_str [2];
 		//tables.b = int.Parse (b + "");
 		//tables.answer = tables.a + tables.b;
 	}

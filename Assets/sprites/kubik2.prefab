@@ -30,7 +30,7 @@ GameObject:
   - 61: {fileID: 6191162}
   m_Layer: 0
   m_Name: kubik2
-  m_TagString: Untagged
+  m_TagString: square
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -175,6 +175,10 @@ Prefab:
       propertyPath: okno_calc
       value: 
       objectReference: {fileID: 171390, guid: ecd1dcf38af63bf4d88b736afc54e5e1, type: 2}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: square
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 151184}

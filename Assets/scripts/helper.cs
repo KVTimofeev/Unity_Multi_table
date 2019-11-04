@@ -2,6 +2,7 @@
 using System.Collections;
 
 public class helper {
+	static string Tag="helper:";
 	private static helper singleObj;
 	public static helper TakeHelper(){
 		if (singleObj == null) {
@@ -17,7 +18,7 @@ public class helper {
 		example= sum.StrExample();
 		answer = sum.Answer ();
 	}
-
+/*
 	public int[] ShuffleInts(int[] mass){
 		int n = mass.Length;
 		while (n>1) {
@@ -29,6 +30,45 @@ public class helper {
 			}
 		return mass;
 	}
+
+*/
+
+	public static int[] ShuffleInts2(int len){
+		//int len = 15;
+		int[] buff=new int[len] ;
+		int[] ret_arr = new int[len];
+		try{
+			//заполняем массив буфера каждое знчаение по индексу
+			for (int i=0; i<len; i++) {
+				
+				buff[i]=i;
+			}
+			int c = len;
+			//мы создали вторую переменнну типа count чтобы ее можно было сокращать.
+			/*после того как создали массив (0,1,2,3....)
+		 * берем из них случайное число, записываем во второй маассив, которое впоследствии возвращаем,
+		 * а в первом массиве делаем смещение влево, чтобы числа не повторялись
+		 * 
+		 */
+			
+
+			for (int i=0; i<len; i++) {
+				Debug.Log(Tag+"Hello, world!"+i+" len= "+len+" c= "+c);
+				int r=Random.Range(0,c);
+				ret_arr[i]=buff[r];
+				Debug.Log(Tag+"num= "+ret_arr[i]);
+				for(int j=r;j!=c-1;j++){                
+					buff[j]=buff[j+1];
+				}
+				c=c-1;
+			}
+		}catch(System.IndexOutOfRangeException e){
+			Debug.Log(Tag+"exep");
+		}
+		return ret_arr;
+		
+	}
+
 
 
 	/// <summary>

@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class delete_script : MonoBehaviour {
-
+	public string Tag="delete_script:";
 	public GameObject simbol;
 	public string pict_ans_wind="picture_answered_wind";
 	//"picter_answered_wind"
@@ -16,11 +16,11 @@ public class delete_script : MonoBehaviour {
 	
 	}
 	void OnMouseDown(){
-		Debug.Log ("delete btn push");
+		Debug.Log (Tag+"delete btn push");
 		GameObject ans_wind = GameObject.Find (tables.HierarchyNames.pict_ans_wind);
 
 		TextMesh txtOnAnswer = (TextMesh)ans_wind.GetComponentInChildren<TextMesh> () as TextMesh;
-		if (txtOnAnswer.text.Length > 0) {
+		if (txtOnAnswer.text.Length > 0) {//если уже что то написано
 			string str = txtOnAnswer.text;
 			char lastSimb=str[str.Length-1];
 
@@ -35,7 +35,7 @@ public class delete_script : MonoBehaviour {
 
 
 			txtOnAnswer.text = txtOnAnswer.text.Remove (txtOnAnswer.text.Length - 1);
-			if(txtOnAnswer.text.Length==0){
+			if(txtOnAnswer.text.Length==0){//если окно пустое
 				Destroy(gameObject);
 			}
 

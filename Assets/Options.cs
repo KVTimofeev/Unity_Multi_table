@@ -64,9 +64,9 @@ public class Options {
 		 * 
 		 */
 
-		int index_last_simb = slide.name.Length - 1;
-		string lSimb=""+slide.name[index_last_simb];
-		int number_of_slide = int.Parse (lSimb);
+		//int index_last_simb = slide.name.Length - 1;
+		//string lSimb=""+slide.name[index_last_simb];
+		//int number_of_slide = int.Parse (lSimb);
 
 		//Debug.Log ("number_of_slide"+number_of_slide);
 		//не стоит забывать что массив измениний каждого слайда идет с нуля, а названия самих слайдов с еденицы
@@ -75,8 +75,7 @@ public class Options {
 
 
 		pOptions = Options.OpenOptions ();
-		float fMaxValues = (float)MaxValues;
-		float new_value = (fMaxValues - val)/3;
+		//float new_value = (fMaxValues - val)/3;
 		Debug.Log ("Counter="+pOptions.Counter);
 		GameObject.Find ("Slider" + pOptions.Counter).GetComponent<Slider> ().value = 1f;
 

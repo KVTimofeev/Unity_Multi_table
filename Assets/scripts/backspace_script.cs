@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class backspace_script : MonoBehaviour {
-
+	string Tag="backspace_script:";
 	// Use this for initialization
 	void Start () {
 	

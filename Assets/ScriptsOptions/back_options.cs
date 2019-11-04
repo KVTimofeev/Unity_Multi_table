@@ -15,5 +15,7 @@ public class back_options : MonoBehaviour {
 	public void TransToMainMenu(){
 		Sliders sliders = Sliders.openObjSliders ();
 
+
+		Sliders.DestroySingl ();//разыменовать экземпляр
 	}
 }
